@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📈 StockBoard: 주식 시장 가이드북 (Beginner's Guide)
 
-# Run and deploy your AI Studio app
+환영합니다! **StockBoard**는 복잡한 주식 시장 데이터를 한눈에 파악할 수 있도록 설계된 세련되고 강력한 대시보드 애플리케이션입니다. 이 가이드는 초보자분들이 앱의 기능을 100% 활용하고 코드가 어떻게 구성되어 있는지 이해하는 데 도움을 주기 위해 작성되었습니다.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/2d229a27-27bd-41ce-bcbb-c5e7228dba2c
+## 🌟 앱 소개 (What is StockBoard?)
 
-## Run Locally
+StockBoard는 금융 전문가용 단말기(Bloomberg, Reuters 등)의 강렬하고 직관적인 디자인에서 영감을 받은 **Bold Typography** 테마의 주식 대시보드입니다. 국내 지수(KOSPI)와 해외 실시간 시세, 그리고 주요 기술주들의 상세 분석 데이터를 제공합니다.
 
-**Prerequisites:**  Node.js
+### 주요 특징
+- **실시간 티커 테이프**: 앱 상단에서 멈추지 않고 흐르는 실시간 시장 지수 정보.
+- **벤토 그리드(Bento Grid) 레이아웃**: 자산 현황, 퀵 액션, 시장 순위를 카드 형태로 깔끔하게 정리.
+- **심층 종목 분석**: 차트와 함께 ROE, PER, 매출 등 핵심 재무제표 시각화 데이터 제공.
+- **다크 모드 최적화**: 시각적 피로도를 줄이면서도 중요한 지표(상승/하락)를 강렬한 색상으로 강조.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠 사용된 기술 (Tech Stack)
+
+이 프로젝트는 최신 웹 개발 트렌드를 반영하여 구축되었습니다.
+
+- **React & Vite**: 빠르고 현대적인 사용자 인터페이스 구축.
+- **Tailwind CSS**: "Bold Typography" 디자인 시스템을 구현하기 위한 유틸리티 우선 스타일링.
+- **Framer Motion**: 부드러운 페이지 전환과 차트 애니메이션.
+- **Recharts**: 주가 흐름을 시각화하는 강력한 차트 라이브러리.
+- **Lucide React**: 직관적인 UI 아이콘 세트.
+
+---
+
+## 🚀 시작하기 (Getting Started)
+
+프로젝트를 자신의 환경에서 실행해보려면 다음 단계를 따르세요.
+
+1.  **의존성 설치**: 터미널에서 아래 명령어를 입력합니다.
+    ```bash
+    npm install
+    ```
+2.  **개발 서버 실행**: 앱을 브라우저에서 확인합니다.
+    ```bash
+    npm run dev
+    ```
+3.  **결과 확인**: 브라우저에서 `http://localhost:3000` 접속!
+
+---
+
+## 📂 프로젝트 구조 (Project Structure)
+
+초보자분들이 코드를 쉽게 탐색할 수 있도록 주요 폴더를 설명합니다.
+
+- `src/App.tsx`: 애플리케이션의 메인 레이아웃과 전체 흐름을 담당합니다.
+- `src/components/`: 재사용 가능한 UI 컴포넌트들이 들어있습니다.
+    - `StockDetail.tsx`: 종목을 클릭했을 때 나타나는 상세 분석 화면입니다.
+    - `ui/`: 버튼, 차트, 검색창 등 작은 단위의 UI 요소들입니다.
+- `src/data/`: 마켓 시세와 종목 정보 등 **Mock Data**가 정의되어 있어 API 없이도 작동 원리를 공부할 수 있습니다.
+- `src/index.css`: Tailwind CSS의 커스텀 테마 색상과 폰트 설정이 정의된 곳입니다.
+
+---
+
+## 💡 유용한 팁
+
+- **이름 옆의 '▲'와 '▼'를 확인하세요**: 시장의 활기를 나타내는 지표입니다.
+- **차트에 마우스를 올려보세요**: 특정 시간대의 정확한 가격을 확인할 수 있습니다.
+- **반응형 디자인**: PC뿐만 아니라 태블릿과 모바일에서도 최적화된 화면을 보여줍니다.
+
+이 대시보드가 여러분의 성공적인 투자와 개발 공부에 즐거운 파트너가 되기를 바랍니다! 🚀

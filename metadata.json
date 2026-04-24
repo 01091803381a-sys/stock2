@@ -1,0 +1,6 @@
+{
+  "name": "StockBoard",
+  "description": "Comprehensive stock dashboard for monitoring global markets, specialized in KRX and US stocks with interactive charts and financial summaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
